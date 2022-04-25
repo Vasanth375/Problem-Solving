@@ -1,0 +1,41 @@
+INPUT:-
+  0   1   2
+["T","s","i"],0
+["h","%","x"],1
+["i"," ","#"],2
+["s","M"," "],3
+["$","a"," "],4
+["#","t","%"],5
+["i","r","!"] 6
+
+step 1:-
+set all matrix elements in songle line
+EG:-
+This$#is% Matrix#  %!
+
+STEP2:-
+REMOVE ALL SPECIAL SYMBOLS BETWEEN WORDS
+
+This$#is% Matrix#  %! --> into --> This  is  Matrix#  %!
+
+
+STEP3:-
+PROGRAM SUCCESSS!!!
+OUTPUT:- This  is  Matrix#  %!
+{"T","s","i"},
+{"h","%","x"},
+{"i"," ","#"},
+{"s","M"," "},
+{"$","a"," "},
+{"#","t","%"},
+{"i","r","!"}
+
+---------------------------------------------------------------------
+
+["T","s","i"],
+["h","%","x"],
+["i"," ","#"],
+["s","M"," "],
+["$","a"," "],
+["#","t","%"],
+["i","r","!"] 
