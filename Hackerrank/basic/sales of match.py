@@ -9,14 +9,18 @@ ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 # ar = [1,2,1,2,1,3,2]
 countDict = dict()
 
+# counting the total values
 for i in ar:
     countDict[i] = ar.count(i)
 
 finalList = []
+
+#finding the even pairs and appending in a list
 for i in countDict:
     for j in range(countDict[i]+1):
         if j % 2 == 0:
             if j != 0:
                 finalList.append([j])
 
+# printing the number of pairs
 print(len(finalList))
