@@ -1,10 +1,14 @@
 a=[2,6]
-b=[24,36]
-temp=[]
-for j in range(2):
-    for i in range(1,50) :
-        if i%a[0] == 0 and i%a[1] == 0 and b[j]%a[1] == 0 and b[j]%a[1] == 0:
-            temp.append(i)
+b=[24,36, "sai"]
 
-temp=list((temp[0],temp[1]))
-print(len(temp))
+
+def getTotalX(a, b):
+    # Write your code here
+    # return len([i for i in range(a[-1],b[0]+1) if all(i%j==0 for j in a) and all(k%i == 0 for k in b) ])
+    c=[]
+    for i in range(a[-1], b[0]+1):
+        if all(i%j == 0 for j in a) and all(k%i == 0 for k in b):
+            c.append(i)
+    return len(c)
+
+print(getTotalX(a,b))

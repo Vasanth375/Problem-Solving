@@ -1,24 +1,21 @@
 '''
-1)there are apple and orange arrays.we have points a and b, from a to left is negative and from a to right is positive.
-2)there's a red region between s and t.
-3)we have two arrays check each element whether it is positive or not if it is positive then place it to rightside.
-4)check how many elements from apples and oranges arrays are between s and t, increase k if apples and oranges element are true.
+1. given two lists and a and b are the values of apple and orange trees, s and t are the house of the range
+2. add 
 '''
-a,b=4,12
-apples=[2,3,-4]
-apple=[]
-oranges=[3,-2,-4]
-orange=[]
-#Red region area points
-s,t=7,10
 
-for i in range(len(oranges)):
-    if oranges[i]>0:
-        orange.append(oranges[i])
-print(len(orange))
+# s, t, a, b, m, n = 7, 11, 5, 15, 3, 2
+# apples = [-2, 2, 1]
+# oranges = [5, -6]
+s,t,a,b,m,n = 2,3,1,5,1,1
+apples = [2]
+oranges = [-2]
+AtHomeApples, AtHomeOranges = [], []
 
-for i in range(len(apples)):
-    if apples[i]>0:
-        apple.append(apples[i])
+AtHomeApples = [i+a for i in apples]
+AtHomeOranges = [i+b for i in oranges]
 
-print(len(apple))
+appleCount = [1 for i in AtHomeApples if i in range(s, t+1)]
+orangeCount = [1 for i in AtHomeOranges if i in range(s, t+1)]
+
+print(len(appleCount))
+print( len(orangeCount))
