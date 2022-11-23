@@ -6,8 +6,11 @@
 '''
 #  One TestCase left out of 13
 grid=['kc', 'iu']
-    # Using list comprehensive sorted the grid items and stored in temp
+grid = ['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']
+
+# Using list comprehensive sorted the grid items and stored in temp
 temp=[''.join(sorted(i)) for i in grid]
+
 print(temp)
 if temp == sorted(temp):
     print("YES")
