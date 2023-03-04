@@ -1,3 +1,4 @@
+# same question exist in leetcode platform
 # Accepted 
 a = [9,9,9,9]
 
