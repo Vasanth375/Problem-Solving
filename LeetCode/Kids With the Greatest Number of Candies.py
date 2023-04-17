@@ -21,3 +21,11 @@ for i in range(len(candies)):
         boool.append(False)
 
 print(boool)
+
+## ----------------------------------------------------
+# there's an approach to find whether a given element is greater then all the elements in a list
+# simply check the highest value in the given list and compare it with the value given
+a = [2,1,5,7,1,8,9]
+k = 10
+maxval = max(a)
+print(k > maxval)
