@@ -9,7 +9,7 @@ player = [5,25,50, 120]
 ranked = [100, 90, 90, 80, 75, 60]
 player = [50, 65, 77, 90, 102]
 
-x = [ ]
+x = []
 
 c = set(ranked)
 d = list(c)
