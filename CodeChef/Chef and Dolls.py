@@ -1,12 +1,11 @@
-# returing the missing doll from the collection
-k = [1,2,1, 3]
-d = {}
-q = 0
-for i in k:
-    d[i] = d.get(i, 0) + 1
+# returing the missing doll from the collection which will come exactly once
 
-for i in d:
-    if d[i] == 1:
-        q = i
+k = [1, 2, 1, 3]
+
+m = 0
+for i in k:
+    '''printing the i value when odd number of elements in the collection '''
+    if k.count(i) % 2 == 1:
+        m = i
         break
-print(q)
+print(m)
