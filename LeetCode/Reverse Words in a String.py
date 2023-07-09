@@ -1,6 +1,6 @@
 s = "the sky is blue"
-#s = "  hello world  "
-#s = "a        good       example"
+# s = "  hello world  "
+# s = "a        good       example"
 
 s = s.strip(" ")
 
@@ -15,3 +15,10 @@ while i < len(s):
 # print(s)
 
 print(" ".join(s[::-1]))
+
+#########################
+s = "  hello world  "
+# actual solution with 22ms
+s = s.split()
+
+print(" ".join(reversed(s)))
