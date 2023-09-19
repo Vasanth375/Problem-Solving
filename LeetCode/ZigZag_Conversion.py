@@ -1,4 +1,3 @@
-# Use pythontutor to find where you want to resume your work
 
 s = "PAYPALISHIRING"
 numRows = 4
