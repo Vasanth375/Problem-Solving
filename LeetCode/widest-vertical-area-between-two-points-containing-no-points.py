@@ -1,6 +1,5 @@
 points = [[8, 7], [9, 9], [7, 4], [9, 7]]
-# [vertical, horizontal
-]
+# [vertical point, horizontal point]
 points.sort()
 
 ans = 0
