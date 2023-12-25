@@ -13,5 +13,6 @@ public class Java_BigInteger {
         BigInteger add = a.add(b);
         BigInteger mul = a.multiply(b);
         System.out.println(add + "\n" + mul);
+        sc.close();
     }
 }
