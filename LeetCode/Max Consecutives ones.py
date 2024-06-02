@@ -22,3 +22,21 @@ for i in range(len(nums)-1):
         count = 0
 print(maxCount+1)
 
+# Two Pointers/Sliding window approach - working
+nums = [1,1,0,1,1,1]
+
+l = 0
+r = 0
+maxLe = 0
+
+while r < len(nums):
+    # checking if the right is zero and finding the length and storing max length
+    if nums[r] != 0:
+        le = r - l + 1
+        maxLe = max(maxLe, le)
+        r += 1
+    else:
+        # when we reached to zero right will be incremented and left pointing to the right
+        r += 1
+        l = r
+print(maxLe)
