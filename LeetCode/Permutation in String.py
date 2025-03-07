@@ -1,34 +1,17 @@
-## Memory Limit Exceeded
+s1 = "abc"
+s2 = "bbca"
 
-from itertools import permutations
 
-s1 = "ab"
-s2 = "eidboaooo"
+sortedS1 = sorted(s1)
+sortedS1 = "".join(sortedS1)
 
-s1 = "dinitrophenylhydrazine"
-s2 = "acetylphenylhydrazine"
-
-def generate_permutations(string):
-    if len(string) == 1:
-        return [string]
- 
-    permutations = []
-    for i in range(len(string)):
-        fixed_char = string[i]
-        remaining_chars = string[:i] + string[i+1:]
-        for perm in generate_permutations(remaining_chars):
-            k = fixed_char + perm
-            permutations.append(k)
- 
-    return permutations
-# permstring = generate_permutations(s1)
-# k = []
-
-# for i in permstring:
-#     k.append("".join(i))
-# print(k)
-# for i in k:
-#     if i in s2:
-#         print(True)
-#         break
-
+for s22 in range(len(s2)):
+    if s2[s22] in s1:
+        # k = s2[s2.index(s22):s2.index(s22)+len(s1)]
+        k = s2[s22:s22+len(s1)]
+        sortedK = sorted(k)
+        sortedK = "".join(sortedK)
+        if sortedK == sortedS1:
+            print(True)
+            break
+print(False)
